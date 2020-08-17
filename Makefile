@@ -30,3 +30,6 @@ include $(wildcard %.d)
 	mv tkana.pdf tkana_sile.pdf
 	pdftk tkana_sile.pdf ISOform.pdf cat output tkana.pdf
 	rm tkana_sile.pdf
+
+clean:
+	rm $(OUTPUTS)
