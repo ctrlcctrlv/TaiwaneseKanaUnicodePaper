@@ -1,0 +1,178 @@
+return {
+  {
+    label = {
+      "Quick summary",
+      id = "stuff"
+    },
+    level = 1,
+    pageno = "4"
+  },
+  {
+    label = {
+      "Tone marks",
+      id = "stuff"
+    },
+    level = 2,
+    pageno = "4"
+  },
+  {
+    label = {
+      "Nasalized tone marks",
+      id = "stuff"
+    },
+    level = 2,
+    pageno = "5"
+  },
+  {
+    label = {
+      "Combining characters",
+      id = "stuff"
+    },
+    level = 2,
+    pageno = "6"
+  },
+  {
+    label = {
+      "Overview",
+      id = "stuff"
+    },
+    level = 1,
+    pageno = "7"
+  },
+  {
+    label = {
+      "Linguistic",
+      id = "stuff"
+    },
+    level = 2,
+    pageno = "7"
+  },
+  {
+    label = {
+      "Historic (Taiwanese...kana?)",
+      id = "stuff"
+    },
+    level = 2,
+    pageno = "7"
+  },
+  {
+    label = {
+      "Legacy encodings",
+      id = "stuff"
+    },
+    level = 2,
+    pageno = "10"
+  },
+  {
+    label = {
+      "Pseudo-Unicode encodings",
+      id = "stuff"
+    },
+    level = 3,
+    pageno = "10"
+  },
+  {
+    label = {
+      "Mojikyō",
+      id = "stuff"
+    },
+    level = 3,
+    pageno = "10"
+  },
+  {
+    label = {
+      "Unicode considerations",
+      id = "stuff"
+    },
+    level = 1,
+    pageno = "12"
+  },
+  {
+    label = {
+      "On tone six",
+      id = "stuff"
+    },
+    level = 2,
+    pageno = "12"
+  },
+  {
+    label = {
+      "On the aspiration mark",
+      id = "stuff"
+    },
+    level = 2,
+    pageno = "12"
+  },
+  {
+    label = {
+      "On glyph order",
+      id = "stuff"
+    },
+    level = 2,
+    pageno = "13"
+  },
+  {
+    label = {
+      "Tone letters",
+      id = "stuff"
+    },
+    level = 3,
+    pageno = "13"
+  },
+  {
+    label = {
+      "Combining characters",
+      id = "stuff"
+    },
+    level = 3,
+    pageno = "13"
+  },
+  {
+    label = {
+      "Vertical typesetting",
+      id = "stuff"
+    },
+    level = 2,
+    pageno = "13"
+  },
+  {
+    label = {
+      "Evidence of all requested characters",
+      id = "stuff"
+    },
+    level = 1,
+    pageno = "15"
+  },
+  {
+    label = {
+      "Tone letters",
+      id = "stuff"
+    },
+    level = 2,
+    pageno = "15"
+  },
+  {
+    label = {
+      "Combining characters",
+      id = "stuff"
+    },
+    level = 2,
+    pageno = "15"
+  },
+  {
+    label = {
+      "Miscellaneous pages",
+      id = "stuff"
+    },
+    level = 2,
+    pageno = "17"
+  },
+  {
+    label = {
+      "Bibliography",
+      id = "stuff"
+    },
+    level = 1,
+    pageno = "19"
+  }
+}

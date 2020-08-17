@@ -1,0 +1,4 @@
+A0669 610, 611 dot/overline before overline
+A0625 567 plain before overline
+B0048 2 plain before dot
+
