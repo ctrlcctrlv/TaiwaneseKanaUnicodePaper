@@ -15,7 +15,7 @@ SILE.registerCommand("tkanav", function(options, content)
 
     content[1] = utf8.char(tkana[1])
     local hascomb = false
-    if tkana[2] == 0x1b31e or tkana[2] == 0x1b31f then
+    if tkana[2] == 0x0323 or tkana[2] == 0x0305 then
         content[1] = content[1] .. utf8.char(tkana[2])
         hascomb = true
     end
@@ -27,7 +27,7 @@ SILE.registerCommand("tkanav", function(options, content)
     content[1] = utf8.char(tkana[idx])
     SILE.call("rebox", {width = 0}, content)
     content[1] = utf8.char(tkana[#tkana])
-    if tkana[#tkana] >= 0x1B300 and tkana[#tkana] <= 0x1B31F then
+    if tkana[#tkana] >= 0x1B300 and tkana[#tkana] <= 0x0305 then
         SILE.call("font", {size= "1.2em"})
         local hbox = nil
         SILE.call("rebox", {width = 0}, function()
