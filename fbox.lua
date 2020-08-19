@@ -40,7 +40,7 @@ local fbox = function(options, content)
   multiEval("\\end{pagetemplate}\n")
   -- print(table.concat(evalstatements,"\n")) -- for debugging
   eval()
-  eval(SILE.inputs.TeXlike.docToTree("{\\"..string.format("typeset-into[frame=fbox%d]{%s}", fboxid, content[1]:gsub("𗂧","}"):gsub("𗂦","{"):gsub("𗂥","\\")).."}"), true, true)
+  eval(SILE.inputs.TeXlike.docToTree("{\\"..string.format("typeset-into[frame=fbox%d]{%s}", fboxid, options._).."}"), true, true)
   fboxid=fboxid+1
   -- SU.dump(content)
 end, "\\fbox - a frame, right here, that the frame you're in won't write over."

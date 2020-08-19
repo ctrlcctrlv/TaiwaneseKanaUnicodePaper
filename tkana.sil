@@ -56,7 +56,7 @@ end)
 \define[command=nantwhyphen]{\begin[family=Noto Serif CJK JP,size=0.7zw]{font}\raise[height=0.3zw]{-}\end{font}\process}
 \define[command=nantwspace]{\glue[width=0.2em]}
 \define[command=cjkhyphen]{\begin[family=Noto Serif CJK JP,size=0.7zw]{font}\raise[height=0.3zw]{-}\end{font}\process}
-\define[command=cjk]{\begin[size=0.95em,family=Noto Serif CJK JP]{font}\process\end{font}}
+\define[command=cjk]{\font[size=0.95em,family=Noto Serif CJK JP]{\process}}
 \define[command=mathfourtd]{\td{\font[family=MathJax_Size4]{\process}}}
 \par\center{\font[size=24pt,weight=1000]A proposal to encode Taiwanese kana \font[family=Noto Serif CJK JP](\ruby[reading=TÂI]{臺}\nantwhyphen\ruby[reading=OÂN]{灣}\nantwhyphen\ruby[reading=GÍ]{語}\nantwspace\ruby[reading=KHÁ]{假}\nantwhyphen\ruby[reading=NAH]{名})\font[family=EB Garamond] in the UCS}
 \remove-font-feature[Letters=SmallCaps]
@@ -87,13 +87,11 @@ end)
 \bigskip
 \bigskip
 
-\noindent\cjk{\fbox[width=4zw,framefunc=\tate-frame]{
-𗂥noindent𗂥rubyB[reading=ふるや]𗂦古家𗂧𗂥rubyB[reading=ときお]𗂦時雄𗂧を追悼して
-𗂥bigskip𗂥bigskip
-𗂥noindent𗂥rubyB[reading=もじきょう]𗂦文字鏡𗂧研究会に心から感謝します
-}}
-%\noindent\cjk{\fbox[framefunc=\tate-frame]{よくある質問（英語：𗂥glue[width=1.5zw]𗂦𗂧𗂥lower[height=0.3zw]𗂦𗂥rotate[angle=90]𗂦FAQ𗂧𗂥glue[width=-3zw]𗂧）}}
-%\showframe[id=all]
+\noindent\cjk{\fbox[width=4zw,framefunc=\tate-frame,_="
+\noindent\rubyB[reading=ふるや]{古家}\rubyB[reading=ときお]{時雄}を追悼して
+\bigskip\bigskip
+\noindent\rubyB[reading=もじきょう]{文字鏡}研究会に心から感謝します
+"]}
 \define[command=SILE]{S\lower[height=0.5ex]{I}L\kern[width=-.2em]\raise[height=0.6ex]{\font[features=+smcp]{e}}}
 \typeset-into[frame=folio]{\begin[size=12pt]{font}\hfill This document was typeset with \SILE.\end{font}}
 \nofolios\par\eject
@@ -150,71 +148,73 @@ For their help with \SILE, an experimental typesetting engine and alternative to
 \eject\tableofcontents
 \define[command=book:chapter:post]{\par}
 \chapter{Quick summary}
-I propose a new block, in the Supplementary Multilingual Plane, to be called Katakana Phonetic Extensions Extended-A, or perhaps, if the Unicode Technical Committee prefers, Taiwanese Kana. I propose that the new block is to have range U+1BA00 -- U+1BA0F, and is to include:
+I propose a new block, in the Supplementary Multilingual Plane, to be called Katakana Phonetic Extensions Extended-A. I propose that the new block be given range U+1BA00 -- U+1BA0F, and is to include:
 \section{Tone marks}
-\noindent \tkanaisol{\unichar{0x1ba01}} \font[features=+smcp]{Modifier Letter Katakana Hokkien Tone Two}\\
+\noindent \tkanaisol{\unichar{0x1ba01}} \font[features=+smcp]{Modifier Letter Katakana Tone Two}\\
 \noindent Mojiky\={o} 69622; tentative encoding U+1BA01\\
 "]
 \begin{listarea}
-\glue[width=2em]\listitem{Also used for tone six\footnote{For more discussion of this issue, and why I'm proposing we leave U+1B306 and U+1B316 open, please see \unichar{0xA7} On tone six.}}
+\glue[width=2em]\listitem{In Hokkien, also used for tone six\footnote{For more discussion of this issue, and why I'm proposing we leave U+1B306 and U+1B316 open, please see \unichar{0xA7} On tone six.}}
 \end{listarea}
 \texmode[_="%]
 \\
-\noindent \tkanaisol{\unichar{0x1ba02}} \font[features=+smcp]{Modifier Letter Katakana Hokkien Tone Three}\\
+\noindent \tkanaisol{\unichar{0x1ba02}} \font[features=+smcp]{Modifier Letter Katakana Tone Three}\\
 \noindent Mojiky\={o} 69623; tentative encoding U+1BA02
 \\\\
-\noindent \tkanaisol{\unichar{0x1ba03}} \font[features=+smcp]{Modifier Letter Katakana Hokkien Tone Four}\\
+\noindent \tkanaisol{\unichar{0x1ba03}} \font[features=+smcp]{Modifier Letter Katakana Tone Four}\\
 \noindent Mojiky\={o} 69624; tentative encoding U+1BA03
 \\\\
-\noindent \tkanaisol{\unichar{0x1ba04}} \font[features=+smcp]{Modifier Letter Katakana Hokkien Tone Five}\\
+\noindent \tkanaisol{\unichar{0x1ba04}} \font[features=+smcp]{Modifier Letter Katakana Tone Five}\\
 \noindent Mojiky\={o} 69625; tentative encoding U+1BA04
 \\\\
-\noindent \tkanaisol{\unichar{0x1ba06}} \font[features=+smcp]{Modifier Letter Katakana Hokkien Tone Seven}\\
+\noindent \tkanaisol{\unichar{0x1ba06}} \font[features=+smcp]{Modifier Letter Katakana Tone Seven}\\
 \noindent Mojiky\={o} 69627; tentative encoding U+1BA06
 \\\\
-\noindent \tkanaisol{\unichar{0x1ba07}} \font[features=+smcp]{Modifier Letter Katakana Hokkien Tone Eight}\\
+\noindent \tkanaisol{\unichar{0x1ba07}} \font[features=+smcp]{Modifier Letter Katakana Tone Eight}\\
 \noindent Mojiky\={o} 69628; tentative encoding U+1BA07
 \\\\\eject
 \section{Nasalized tone marks}
-\noindent \tkanaisol{\unichar{0x1ba08}} \font[features=+smcp]{Modifier Letter Katakana Hokkien Nasalized Tone One}\\
+\noindent \tkanaisol{\unichar{0x1ba08}} \font[features=+smcp]{Modifier Letter Katakana Nasalized Tone One}\\
 \noindent Mojiky\={o} 69629; tentative encoding U+1BA08
 \\\\
-\noindent \tkanaisol{\unichar{0x1BA09}} \font[features=+smcp]{Modifier Letter Katakana Hokkien Nasalized Tone Two}\\
+\noindent \tkanaisol{\unichar{0x1BA09}} \font[features=+smcp]{Modifier Letter Katakana Nasalized Tone Two}\\
 \noindent Mojiky\={o} 69630; tentative encoding U+1BA09\\
 "]
 \script{SILE.scratch.counters.footnote.value=1}
 \begin{listarea}
-\glue[width=2em]\listitem{Also used for tone six\footnote{For more discussion of this issue, and why I'm proposing we leave U+1B306 and U+1B316 open, please see \unichar{0xA7} On tone six.}}
+\glue[width=2em]\listitem{In Hokkien, also used for tone six\footnote{For more discussion of this issue, and why I'm proposing we leave U+1B306 and U+1B316 open, please see \unichar{0xA7} On tone six.}}
 \end{listarea}
 \texmode[_="%]
 \\
-\noindent \tkanaisol{\unichar{0x1BA0A}} \font[features=+smcp]{Modifier Letter Katakana Hokkien Nasalized Tone Three}\\
+\noindent \tkanaisol{\unichar{0x1BA0A}} \font[features=+smcp]{Modifier Letter Katakana Nasalized Tone Three}\\
 \noindent Mojiky\={o} 69631; tentative encoding U+1BA0A
 \\\\
-\noindent \tkanaisol{\unichar{0x1BA0B}} \font[features=+smcp]{Modifier Letter Katakana Hokkien Nasalized Tone Four}\\
+\noindent \tkanaisol{\unichar{0x1BA0B}} \font[features=+smcp]{Modifier Letter Katakana Nasalized Tone Four}\\
 \noindent Mojiky\={o} 69632; tentative encoding U+1BA0B
 \\\\
-\noindent \tkanaisol{\unichar{0x1BA0C}} \font[features=+smcp]{Modifier Letter Katakana Hokkien Nasalized Tone Five}\\
+\noindent \tkanaisol{\unichar{0x1BA0C}} \font[features=+smcp]{Modifier Letter Katakana Nasalized Tone Five}\\
 \noindent Mojiky\={o} 69633; tentative encoding U+1BA0C
 \\\\
-\noindent \tkanaisol{\unichar{0x1BA0E}} \font[features=+smcp]{Modifier Letter Katakana Hokkien Nasalized Tone Seven}\\
+\noindent \tkanaisol{\unichar{0x1BA0E}} \font[features=+smcp]{Modifier Letter Katakana Nasalized Tone Seven}\\
 \noindent Mojiky\={o} 69635; tentative encoding U+1BA0E
 \\\\
-\noindent \tkanaisol{\unichar{0x1BA0F}} \font[features=+smcp]{Modifier Letter Katakana Hokkien Nasalized Tone Eight}\\
+\noindent \tkanaisol{\unichar{0x1BA0F}} \font[features=+smcp]{Modifier Letter Katakana Nasalized Tone Eight}\\
 \noindent Mojiky\={o} 69636; tentative encoding U+1BA0F
 \eject
 \section{Combining characters}
-\noindent \tkanaisol{◌̣} \font[features=+smcp]{Combining Katakana Dot Below}\\
-\noindent Mojiky\={o} 069202; tentative encoding U+0323\\
+\noindent\em{Note: The two below are provided for informational purposes and would be unified with existing characters. Notes are about Taiwanese kana.}
+\bigskip
+\noindent \tkanaisol{◌̣} \font[features=+smcp]{Combining (Katakana) Dot Below}\\
+\noindent Mojiky\={o} 69202; tentative encoding U+0323\\
 "]
 \begin{listarea}
-\glue[width=2em]\listitem{Indicates aspiration; native name \cjk{送氣符}. For example, while \tkana{タア} is /ta/, \tkana{タ̣ア} is /tʰa/.}
+\glue[width=2em]\listitem{Indicates aspiration; native name \em{sàng-khì hû} [\cjk{送氣符}]. For example, while \tkana{タア} is /ta/, \tkana{タ̣ア} is /tʰa/.}
 \glue[width=2em]\listitem{At least one source renders it identically to the \em{nakaguro} (\cjk{中黒}); \newline\glue[width=2em] → \cjk{・} U+30FB KATAKANA MIDDLE DOT}
 \end{listarea}
 \newline\newline
 \texmode[_="%]
-\noindent \tkanaisol{◌̅} \font[features=+smcp]{Combining Katakana Overline}\\
-\noindent Mojiky\={o} 069637--069642;\footnote{Mojiky\={o} chose to encode the versions of the katakana with combining overline above separately, so this refers to the individiual katakana they encoded. In Mojiky\={o} order: \tkana{サ̅チ̅ツ̅セ̅ソ̅ウ̅}. They are missing \tkana{オ̅} and \tkana{ゥ̅}.} tentative encoding U+0305
+\noindent \tkanaisol{◌̅} \font[features=+smcp]{Combining (Katakana) Overline}\\
+\noindent Mojiky\={o} 69637--69642;\footnote{Mojiky\={o} chose to encode the versions of the katakana with combining overline above separately, so this refers to the individiual katakana they encoded. In Mojiky\={o} order: \tkana{サ̅チ̅ツ̅セ̅ソ̅ウ̅}. They are missing \tkana{オ̅} and \tkana{ゥ̅}.} tentative encoding U+0305
 "]
 
 \begin{listarea}
@@ -244,7 +244,7 @@ If I were given the task of naming Taiwanese kana, or, perhaps better said, tran
 
 Taiwanese kana were invented by Japanese linguists on behalf of the imperial Japanese government, which at the time of their introduction, was pursuing a policy of \em{dōka} (\cjk{同化}), meaning, ``assimilation''. The period we most remember them for today was the period of the 1930's, when they were spread primarily to teach Taiwanese people Japanese.\footnote{Chen, Chun-Hui [\cjk{陳君慧}] (June 2002); Lin, Ching-Hsiun [\cjk{林慶勳}], ed. \Href[src=https://etd.lis.nsysu.edu.tw//ETD-db/ETD-search-c/view_etd?URN=etd-0730102-160424]{\cjk{``《訂正台灣十五音字母詳解》音系研究''}}. National Sun Yat-sen University Chinese Literature Department: Master's Thesis.} 
 
-The primary person involved in their creation was the linguist Naoyoshi Ogawa [\cjk{小川尚義}].\footnote{Ibid, p. 19.} The first of Ogawa's works that they make a notable appearance in is the \em{Japanese--Taiwanese Daijiten} (\cjk{日台大辭典}) of 1907.\footnote{Ibid, p. 19--20.} Ogawa continued to refine them until he published his greatest work, the two volume \em{Comprehensive Taiwanese–Japanese Dictionary} [\cjk{臺日大辭典}] (1931). Indeed, it is entirely on the back of this work that modern interest in them continues, with the dictionary continuing to receive updates long after the collapse of the Japanese empire; even famed Taiwanese linguist Âng Ûi-jîn contributed substantially to an update of the dictionary in 1993, published as the \em{Minnan Classic Dictionary Collection} (\cjk{閩南語經典辭書彙編}).
+The primary person involved in their creation was the linguist Naoyoshi Ogawa [\cjk{小川尚義}].\footnote{Ibid, p. 19.} The first of Ogawa's works that they make a notable appearance in is the \em{Japanese--Taiwanese Daijiten} (\cjk{日台大辭典}) of 1907.\footnote{Ibid, p. 19--20.} Another early example is a textbook from 1902, the \em{Textbook for Taiwan} (\cjk{台湾教科用書}). Ogawa continued to refine them until he published his greatest work, the two volume \em{Comprehensive Taiwanese–Japanese Dictionary} [\cjk{臺日大辭典}] (1931). Indeed, it is entirely on the back of this work that modern interest in them continues, with the dictionary continuing to receive updates long after the collapse of the Japanese empire; even famed Taiwanese linguist Âng Ûi-jîn contributed substantially to an update of the dictionary in 1993, published as the \em{Minnan Classic Dictionary Collection} (\cjk{閩南語經典辭書彙編}).
 
 Due to the high quality of this dictionary, which even informed the Taiwanese government's own \em{Dictionary of Frequently-Used Taiwan Minnan} [\cjk{臺灣閩南語常用詞辭典}] (1\sup{st} ed. 2011),\footnote{``Bibliography'' [\cjk{參考書目}]. \Href[src=https://twblg.dict.edu.tw/holodict_new/compile1_3_9_5.jsp]{\cjk{臺灣閩南語常用詞辭典}}. Retrieved August 1, 2020.} Japanese learners of Hokkien continue to use Taiwanese kana even today.\footnote{For two examples of Japanese learners of Hokkien who use Taiwanese kana, see the Twitter profiles of Soaⁿ-kiā (\Href[src=https://twitter.com/suannkia]{@suannkia}) and Taipa (\Href[src=https://twitter.com/taipa]{@taipalogy}).} But, of course, this is not the only reason to encode Taiwanese kana; they are interesting in and of themselves, as a historical writing system with a large body of work behind it.
 
@@ -261,8 +261,8 @@ A ``pseudo-Unicode'' encoding is currently in use on Wikipedia and elsewhere. Th
 
 \begin{listarea}
 \listitem{U+1BA01--1BA0F are represented with SVG's;}
-\listitem{U+0323, the \font[features=+smcp]{Combining Katakana Dot Below}, is represented by the \font[features=+smcp]{Combining Dot Below}, U+0323;}
-\listitem{U+0305, the \font[features=+smcp]{Combining Katakana Overline}, is represented variably by a CSS \code{\hbox{border-top}}, or else by a \font[features=+smcp]{Combining Macron} (U+0304) or other script-inappropriate combining mark.}
+\listitem{U+0323, the \font[features=+smcp]{Combining Dot Below}, is used as in this document; and}
+\listitem{U+0305, the \font[features=+smcp]{Combining Overline}, is represented variably by a CSS \code{\hbox{border-top}}, or else by a \font[features=+smcp]{Combining Macron} (U+0304) or other script-inappropriate combining mark. It seems this is done due to lack of font support for combining marks over katakana.}
 \end{listarea}
 
 A second pseudo-Unicode encoding exists, which I call the ``\Href[src=https://twitter.com/taipalogy/status/1282245269820551169]{Taipa encoding}''. It misuses characters like U+27E8, \font[features=+smcp]{Mathematical Left Angle Bracket}, because of its similar appearance to tone 5, \tkana{𛨄}. It does not seem to have widely caught on outside of Taipa's tweets; certainly this kind of misuse is a good reason to introduce real characters for the task.
@@ -283,6 +283,23 @@ Below are the Taiwanese kana glyphs as they appear in \code{\hbox{Mojikm0D.TTF}}
 \center{\svg[src=mojikyo_tkana.svg,height=10%ph]}
 
 \chapter{Unicode considerations}
+\section{UnicodeData.txt}
+\begin{verbatim}
+1BA01;MODIFIER LETTER KATAKANA TONE TWO;Lm;0;L;;;;;N;;;;;
+1BA02;MODIFIER LETTER KATAKANA TONE THREE;Lm;0;L;;;;;N;;;;;
+1BA03;MODIFIER LETTER KATAKANA TONE FOUR;Lm;0;L;;;;;N;;;;;
+1BA04;MODIFIER LETTER KATAKANA TONE FIVE;Lm;0;L;;;;;N;;;;;
+1BA06;MODIFIER LETTER KATAKANA TONE SEVEN;Lm;0;L;;;;;N;;;;;
+1BA07;MODIFIER LETTER KATAKANA TONE EIGHT;Lm;0;L;;;;;N;;;;;
+1BA08;MODIFIER LETTER KATAKANA NASALIZED TONE ONE;Lm;0;L;;;;;N;;;;;
+1BA09;MODIFIER LETTER KATAKANA NASALIZED TONE TWO;Lm;0;L;;;;;N;;;;;
+1BA0A;MODIFIER LETTER KATAKANA NASALIZED TONE THREE;Lm;0;L;;;;;N;;;;;
+1BA0B;MODIFIER LETTER KATAKANA NASALIZED TONE FOUR;Lm;0;L;;;;;N;;;;;
+1BA0C;MODIFIER LETTER KATAKANA NASALIZED TONE FIVE;Lm;0;L;;;;;N;;;;;
+1BA0E;MODIFIER LETTER KATAKANA NASALIZED TONE SEVEN;Lm;0;L;;;;;N;;;;;
+1BA0F;MODIFIER LETTER KATAKANA NASALIZED TONE EIGHT;Lm;0;L;;;;;N;;;;;
+\end{verbatim}
+
 \section{On tone six}
 In modern Hokkien, tone six is equal to tone two.\footnote{Chiung, Wi-vun Taiffalo (2003). ``\Href[src=https://web.archive.org/web/20120303035733/http://uibun.twl.ncku.edu.tw/chuliau/lunsoat/english/tchange/tonechange-v.pdf]{Tone Change in Taiwanese: Age and Geographic Factors}''. University of Pennsylvania Working Papers in Linguistics. \strong{8} (1).} A symbol, therefore, for tone six, is not in frequent use. However, I found a single source with a symbol for tone six, Taigikho (2017), and recommend we leave a slot open for it should it become more popular in the future, or should more sources emerge, so we have a logical place to put it. Even in Taigikho (2017), however, the symbol is barely discernible, as shown below, and it seems to be that they are trying to discourage its use.
 
@@ -313,6 +330,12 @@ So:
 
 Taiwanese kana are most often typeset vertically historically. All horizontally typeset examples I was able to find are from this century.
 
+As far as Unicode is concerned, all we need is to put this in \code{VerticalOrientation.txt}:
+
+\begin{verbatim}
+1BA01..1BA0F    ; U  # Lc   [13] MODIFIER LETTER KATAKANA TONE TWO..MODIFIER LETTER KATAKANA NASALIZED TONE EIGHT
+\end{verbatim}
+
 For this paper, I am using a \SILE package I wrote to do the vertical layout. Looking at the vertical layout, there are two ways to do it. In this paper, I consider it to be two lines, with the tone letter on the second line. It is also possible to do so in OpenType via contextual positioning, like this:
 
 \begin{verbatim}
@@ -339,7 +362,7 @@ For a fully working OpenType implementation, see \Href[src=https://github.com/ct
 No special actions need be taken, nor JavaScript be used, the HTML for the last example is just:
 
 \begin{verbatim}
-<p class=\"vert\"><ruby>\cjk{臺}<rt>\tkana{タイ𛨄}</rt>\cjk{語}<rt>\tkana{ギイ𛨁}</rt></ruby></p>
+<p class=vert><ruby>\cjk{臺}<rt>\tkana{タイ𛨄}</rt>\cjk{語}<rt>\tkana{ギイ𛨁}</rt></ruby></p>
 \end{verbatim}
 
 \chapter{Evidence of all requested characters}
@@ -368,15 +391,36 @@ Hirasawa (1914), p. 147.
 
 \noindent\img[src=liong.png,width=right(content) - left(content)]
 
+\eject
+\noindent\em{Textbook for Taiwan} [\cjk{台湾教科用書}] (1902).
+
+\bigskip
+
+\noindent\img[src=textbook1.jpg,width=right(content) - left(content)]
+
+\bigskip
+
+\noindent{}The above book is another corroborating source for the equality of tone two (\cjk{下声}) and tone six (\cjk{下声}) in Hokkien, as well.
+"]
+
+\eject
+\noindent\img[src=textbook2.jpg,width=right(content) - left(content)]
+
+\bigskip
+\bigskip
+
+\cjk{先生が本を読んでいます。生徒を、静かに、聞いています。}\newline
+\cjk{先}\tkanav{シェヌ}\cjk{生}\tkanav{シイ𛨈}\cjk{講}\tkanav{コン𛨁}\cjk{，學}\tkanav{ハㇰ𛨇}\cjk{生}\tkanav{シェン}\cjk{恬}\tkanav{チァム𛨆}\cjk{恬}\tkanav{チ̅ァム𛨆}\cjk{聽}\tkanav{チ̣̅ア𛨈}\cjk{。}
+
 \chapter{Bibliography}
 
 \begin{listarea}
+\listitem{\em{Textbook for Taiwan} [\cjk{台湾教科用書}] (1902).\footnote{Meiji 35 (\cjk{明治}35\cjk{年})} Volume 1 [\cjk{国民読本巻一}]. Governor-General of Taiwan, Imperial Government of Japan.}
 \listitem{Hirasawa, Teiakira (1914). \em{Taiwan Proverb Collection} [\cjk{臺灣俚諺集覽}]. Governor-General of Taiwan, Imperial Government of Japan.}
 \listitem{Ogawa, Naoyoshi (1932). \em{Comprehensive Taiwanese–Japanese Dictionary} [\cjk{臺日大辭典}]. Governor-General of Taiwan, Imperial Government of Japan.}
 \listarea{\listitem{Volume 1 (1931)}\listitem{Volume 2 (1932)}}
-\listitem{Ogawa, Naoyoshi (1938). \em{New Japanese--Taiwanese Dictionary} [\cjk{新訂日台大辞典}]. (One volume only, second never completed.)}
+\listitem{Ogawa, Naoyoshi (1938). \em{New Japanese–Taiwanese Dictionary} [\cjk{新訂日台大辞典}]. (One volume only, second never completed.)}
 \listitem{Âng, Ûi-jîn; Ogawa, Naoyoshi (1992). \em{Minnan Classic Dictionary Collection} (\cjk{閩南語經典辭書彙編})}
-\listitem{\em{Tâi-lô--Taiwanese kana tables} (\cjk{\Href[src=https://bit.ly/2Y6v3zd]{臺羅調符－臺語假名調符}}) (2017). Table 0/18. Taigikho (\cjk{失控的台語課}).}
+\listitem{\em{Tâi-lô–Taiwanese kana tables} (\cjk{\Href[src=https://bit.ly/2Y6v3zd]{臺羅調符－臺語假名調符}}) (2017). Table 0/18. Taigikho (\cjk{失控的台語課}).}
 \end{listarea}
-"]
 \end{document}

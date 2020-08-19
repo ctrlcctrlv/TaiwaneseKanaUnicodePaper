@@ -11,7 +11,7 @@ all: $(OUTPUTS)
 # garantee the TOC is up to date, simplify when #230 is fixed.
 hastoc = [[ -f $(subst .pdf,.toc,$@) ]] && echo true || echo false
 pages = pdfinfo $@ | awk '$$1 == "Pages:" {print $$2}' || echo 0
-silepass = sile $< -m -o $@ && pg0=$${pg} pg=$$($(pages))
+silepass = sile -t $< -m -o $@ && pg0=$${pg} pg=$$($(pages))
 
 define runsile =
 	pg0=$$($(pages)) hadtoc=$$($(hastoc))

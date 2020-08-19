@@ -14,20 +14,35 @@ SILE.registerCommand("tkanav", function(options, content)
     end
 
     content[1] = utf8.char(tkana[1])
-    local hascomb = false
+    local hascomb, hascomb2 = false
     if tkana[2] == 0x0323 or tkana[2] == 0x0305 then
         content[1] = content[1] .. utf8.char(tkana[2])
         hascomb = true
+    end
+    if tkana[3] == 0x0323 or tkana[3] == 0x0305 then
+        content[1] = content[1] .. utf8.char(tkana[3])
+        hascomb2 = true
     end
     SILE.call("rebox", {width = 0}, function()
         SILE.call("raise", {height = SILE.measurement("1em")}, content)
     end)
     local idx = nil
-    if hascomb then idx=3 else idx=2 end
-    content[1] = utf8.char(tkana[idx])
-    SILE.call("rebox", {width = 0}, content)
+    local lower = SILE.measurement(0)
+    if hascomb2 then idx=4 else if hascomb then idx=3 else idx=2 end end
+    if idx+1 < #tkana then
+        SILE.call("rebox", {width = 0}, function() SILE.call("raise", {height = SILE.measurement("0.6ex")}, {utf8.char(tkana[idx])}) end)
+        lower = SILE.measurement("1.0ex")
+        content[1] = utf8.char(tkana[idx+1])
+    elseif (tkana[#tkana] <= 0x1BA00 or tkana[#tkana] >= 0x1BA0F) then
+        SILE.call("rebox", {width = 0}, function() SILE.call("raise", {height = SILE.measurement("0.6ex")}, {utf8.char(tkana[idx])}) end)
+        lower = SILE.measurement("1.0ex")
+        content[1] = utf8.char(tkana[#tkana])
+    else
+        content[1] = utf8.char(tkana[idx])
+    end
+    SILE.call("rebox", {width = 0}, function() SILE.call("lower", {height = lower}, content) end)
     content[1] = utf8.char(tkana[#tkana])
-    if tkana[#tkana] >= 0x1B300 and tkana[#tkana] <= 0x0305 then
+    if tkana[#tkana] >= 0x1BA00 and tkana[#tkana] <= 0x1BA0F then
         SILE.call("font", {size= "1.2em"})
         local hbox = nil
         SILE.call("rebox", {width = 0}, function()
