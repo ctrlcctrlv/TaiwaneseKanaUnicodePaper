@@ -150,7 +150,7 @@ For their help with \SILE, an experimental typesetting engine and alternative to
 \chapter{Quick summary}
 I propose a new block, in the Supplementary Multilingual Plane, to be called Katakana Phonetic Extensions Extended-A. I propose that the new block be given range U+1BA00 -- U+1BA0F, and is to include:
 \section{Tone marks}
-\noindent \tkanaisol{\unichar{0x1ba01}} \font[features=+smcp]{Modifier Letter Katakana Tone Two}\\
+\noindent \tkanaisol{\unichar{0x1ba01}} \font[features=+smcp]{Modifier Letter Katakana Hokkien Tone Two}\\
 \noindent Mojiky\={o} 69622; tentative encoding U+1BA01\\
 "]
 \begin{listarea}
@@ -158,26 +158,26 @@ I propose a new block, in the Supplementary Multilingual Plane, to be called Kat
 \end{listarea}
 \texmode[_="%]
 \\
-\noindent \tkanaisol{\unichar{0x1ba02}} \font[features=+smcp]{Modifier Letter Katakana Tone Three}\\
+\noindent \tkanaisol{\unichar{0x1ba02}} \font[features=+smcp]{Modifier Letter Katakana Hokkien Tone Three}\\
 \noindent Mojiky\={o} 69623; tentative encoding U+1BA02
 \\\\
-\noindent \tkanaisol{\unichar{0x1ba03}} \font[features=+smcp]{Modifier Letter Katakana Tone Four}\\
+\noindent \tkanaisol{\unichar{0x1ba03}} \font[features=+smcp]{Modifier Letter Katakana Hokkien Tone Four}\\
 \noindent Mojiky\={o} 69624; tentative encoding U+1BA03
 \\\\
-\noindent \tkanaisol{\unichar{0x1ba04}} \font[features=+smcp]{Modifier Letter Katakana Tone Five}\\
+\noindent \tkanaisol{\unichar{0x1ba04}} \font[features=+smcp]{Modifier Letter Katakana Hokkien Tone Five}\\
 \noindent Mojiky\={o} 69625; tentative encoding U+1BA04
 \\\\
-\noindent \tkanaisol{\unichar{0x1ba06}} \font[features=+smcp]{Modifier Letter Katakana Tone Seven}\\
+\noindent \tkanaisol{\unichar{0x1ba06}} \font[features=+smcp]{Modifier Letter Katakana Hokkien Tone Seven}\\
 \noindent Mojiky\={o} 69627; tentative encoding U+1BA06
 \\\\
-\noindent \tkanaisol{\unichar{0x1ba07}} \font[features=+smcp]{Modifier Letter Katakana Tone Eight}\\
+\noindent \tkanaisol{\unichar{0x1ba07}} \font[features=+smcp]{Modifier Letter Katakana Hokkien Tone Eight}\\
 \noindent Mojiky\={o} 69628; tentative encoding U+1BA07
 \\\\\eject
 \section{Nasalized tone marks}
-\noindent \tkanaisol{\unichar{0x1ba08}} \font[features=+smcp]{Modifier Letter Katakana Nasalized Tone One}\\
+\noindent \tkanaisol{\unichar{0x1ba08}} \font[features=+smcp]{Modifier Letter Katakana Hokkien Nasalized Tone One}\\
 \noindent Mojiky\={o} 69629; tentative encoding U+1BA08
 \\\\
-\noindent \tkanaisol{\unichar{0x1BA09}} \font[features=+smcp]{Modifier Letter Katakana Nasalized Tone Two}\\
+\noindent \tkanaisol{\unichar{0x1BA09}} \font[features=+smcp]{Modifier Letter Katakana Hokkien Nasalized Tone Two}\\
 \noindent Mojiky\={o} 69630; tentative encoding U+1BA09\\
 "]
 \script{SILE.scratch.counters.footnote.value=1}
@@ -186,19 +186,19 @@ I propose a new block, in the Supplementary Multilingual Plane, to be called Kat
 \end{listarea}
 \texmode[_="%]
 \\
-\noindent \tkanaisol{\unichar{0x1BA0A}} \font[features=+smcp]{Modifier Letter Katakana Nasalized Tone Three}\\
+\noindent \tkanaisol{\unichar{0x1BA0A}} \font[features=+smcp]{Modifier Letter Katakana Hokkien Nasalized Tone Three}\\
 \noindent Mojiky\={o} 69631; tentative encoding U+1BA0A
 \\\\
-\noindent \tkanaisol{\unichar{0x1BA0B}} \font[features=+smcp]{Modifier Letter Katakana Nasalized Tone Four}\\
+\noindent \tkanaisol{\unichar{0x1BA0B}} \font[features=+smcp]{Modifier Letter Katakana Hokkien Nasalized Tone Four}\\
 \noindent Mojiky\={o} 69632; tentative encoding U+1BA0B
 \\\\
-\noindent \tkanaisol{\unichar{0x1BA0C}} \font[features=+smcp]{Modifier Letter Katakana Nasalized Tone Five}\\
+\noindent \tkanaisol{\unichar{0x1BA0C}} \font[features=+smcp]{Modifier Letter Katakana Hokkien Nasalized Tone Five}\\
 \noindent Mojiky\={o} 69633; tentative encoding U+1BA0C
 \\\\
-\noindent \tkanaisol{\unichar{0x1BA0E}} \font[features=+smcp]{Modifier Letter Katakana Nasalized Tone Seven}\\
+\noindent \tkanaisol{\unichar{0x1BA0E}} \font[features=+smcp]{Modifier Letter Katakana Hokkien Nasalized Tone Seven}\\
 \noindent Mojiky\={o} 69635; tentative encoding U+1BA0E
 \\\\
-\noindent \tkanaisol{\unichar{0x1BA0F}} \font[features=+smcp]{Modifier Letter Katakana Nasalized Tone Eight}\\
+\noindent \tkanaisol{\unichar{0x1BA0F}} \font[features=+smcp]{Modifier Letter Katakana Hokkien Nasalized Tone Eight}\\
 \noindent Mojiky\={o} 69636; tentative encoding U+1BA0F
 \eject
 \section{Combining characters}
