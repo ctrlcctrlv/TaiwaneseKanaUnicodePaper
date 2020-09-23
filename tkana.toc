@@ -7,7 +7,7 @@ return {
       lno = 100
     },
     level = 1,
-    pageno = "4"
+    pageno = "5"
   },
   {
     label = {
@@ -17,7 +17,7 @@ return {
       lno = 100
     },
     level = 2,
-    pageno = "4"
+    pageno = "5"
   },
   {
     label = {
@@ -27,7 +27,7 @@ return {
       lno = 100
     },
     level = 2,
-    pageno = "5"
+    pageno = "6"
   },
   {
     label = {
@@ -37,7 +37,7 @@ return {
       lno = 100
     },
     level = 2,
-    pageno = "6"
+    pageno = "7"
   },
   {
     label = {
@@ -47,7 +47,7 @@ return {
       lno = 100
     },
     level = 1,
-    pageno = "7"
+    pageno = "8"
   },
   {
     label = {
@@ -57,7 +57,7 @@ return {
       lno = 100
     },
     level = 2,
-    pageno = "7"
+    pageno = "8"
   },
   {
     label = {
@@ -67,7 +67,7 @@ return {
       lno = 100
     },
     level = 2,
-    pageno = "7"
+    pageno = "8"
   },
   {
     label = {
@@ -77,7 +77,7 @@ return {
       lno = 100
     },
     level = 2,
-    pageno = "10"
+    pageno = "11"
   },
   {
     label = {
@@ -87,7 +87,7 @@ return {
       lno = 100
     },
     level = 3,
-    pageno = "10"
+    pageno = "11"
   },
   {
     label = {
@@ -97,7 +97,7 @@ return {
       lno = 100
     },
     level = 3,
-    pageno = "10"
+    pageno = "11"
   },
   {
     label = {
@@ -107,7 +107,7 @@ return {
       lno = 100
     },
     level = 1,
-    pageno = "12"
+    pageno = "13"
   },
   {
     label = {
@@ -117,7 +117,7 @@ return {
       lno = 100
     },
     level = 2,
-    pageno = "12"
+    pageno = "13"
   },
   {
     label = {
@@ -127,7 +127,7 @@ return {
       lno = 100
     },
     level = 2,
-    pageno = "12"
+    pageno = "13"
   },
   {
     label = {
@@ -137,7 +137,7 @@ return {
       lno = 100
     },
     level = 2,
-    pageno = "13"
+    pageno = "14"
   },
   {
     label = {
@@ -147,7 +147,7 @@ return {
       lno = 100
     },
     level = 2,
-    pageno = "13"
+    pageno = "14"
   },
   {
     label = {
@@ -157,7 +157,7 @@ return {
       lno = 100
     },
     level = 3,
-    pageno = "13"
+    pageno = "14"
   },
   {
     label = {
@@ -167,7 +167,7 @@ return {
       lno = 100
     },
     level = 3,
-    pageno = "13"
+    pageno = "14"
   },
   {
     label = {
@@ -177,7 +177,17 @@ return {
       lno = 100
     },
     level = 2,
-    pageno = "14"
+    pageno = "15"
+  },
+  {
+    label = {
+      "On naming",
+      file = "/opt/share/sile/classes/book.lua",
+      id = "stuff",
+      lno = 100
+    },
+    level = 2,
+    pageno = "16"
   },
   {
     label = {
@@ -187,7 +197,7 @@ return {
       lno = 100
     },
     level = 1,
-    pageno = "16"
+    pageno = "17"
   },
   {
     label = {
@@ -197,7 +207,7 @@ return {
       lno = 100
     },
     level = 2,
-    pageno = "16"
+    pageno = "17"
   },
   {
     label = {
@@ -207,7 +217,7 @@ return {
       lno = 100
     },
     level = 2,
-    pageno = "16"
+    pageno = "17"
   },
   {
     label = {
@@ -217,7 +227,7 @@ return {
       lno = 100
     },
     level = 2,
-    pageno = "18"
+    pageno = "19"
   },
   {
     label = {
@@ -227,6 +237,6 @@ return {
       lno = 100
     },
     level = 1,
-    pageno = "22"
+    pageno = "23"
   }
 }

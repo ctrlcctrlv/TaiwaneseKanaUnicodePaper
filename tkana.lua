@@ -27,13 +27,15 @@ SILE.registerCommand("tkanav", function(options, content)
         SILE.call("raise", {height = SILE.measurement("1em")}, content)
     end)
     local idx = nil
+    local nkana = nil
     local lower = SILE.measurement(0)
     if hascomb2 then idx=4 else if hascomb then idx=3 else idx=2 end end
+    if hascomb2 then nkana=#tkana-2 else if hascomb then nkana=#tkana-1 else nkana=#tkana end end
     if idx+1 < #tkana then
         SILE.call("rebox", {width = 0}, function() SILE.call("raise", {height = SILE.measurement("0.6ex")}, {utf8.char(tkana[idx])}) end)
         lower = SILE.measurement("1.0ex")
         content[1] = utf8.char(tkana[idx+1])
-    elseif (tkana[#tkana] <= 0x1BA00 or tkana[#tkana] >= 0x1BA0F) then
+    elseif (tkana[#tkana] <= 0x1BA00 or tkana[#tkana] >= 0x1BA0F) and nkana > 2 then
         SILE.call("rebox", {width = 0}, function() SILE.call("raise", {height = SILE.measurement("0.6ex")}, {utf8.char(tkana[idx])}) end)
         lower = SILE.measurement("1.0ex")
         content[1] = utf8.char(tkana[#tkana])

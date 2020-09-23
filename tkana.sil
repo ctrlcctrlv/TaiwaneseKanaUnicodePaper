@@ -83,7 +83,7 @@ end)
 \font[family=EB Garamond,size=14pt,weight=400]
 \bigskip
 \bigskip
-\center{18 August 2020}
+\center{23 September 2020}
 \bigskip
 \bigskip
 
@@ -285,19 +285,19 @@ Below are the Taiwanese kana glyphs as they appear in \code{\hbox{Mojikm0D.TTF}}
 \chapter{Unicode considerations}
 \section{UnicodeData.txt}
 \begin{verbatim}
-1BA01;MODIFIER LETTER KATAKANA TONE TWO;Lm;0;L;;;;;N;;;;;
-1BA02;MODIFIER LETTER KATAKANA TONE THREE;Lm;0;L;;;;;N;;;;;
-1BA03;MODIFIER LETTER KATAKANA TONE FOUR;Lm;0;L;;;;;N;;;;;
-1BA04;MODIFIER LETTER KATAKANA TONE FIVE;Lm;0;L;;;;;N;;;;;
-1BA06;MODIFIER LETTER KATAKANA TONE SEVEN;Lm;0;L;;;;;N;;;;;
-1BA07;MODIFIER LETTER KATAKANA TONE EIGHT;Lm;0;L;;;;;N;;;;;
-1BA08;MODIFIER LETTER KATAKANA NASALIZED TONE ONE;Lm;0;L;;;;;N;;;;;
-1BA09;MODIFIER LETTER KATAKANA NASALIZED TONE TWO;Lm;0;L;;;;;N;;;;;
-1BA0A;MODIFIER LETTER KATAKANA NASALIZED TONE THREE;Lm;0;L;;;;;N;;;;;
-1BA0B;MODIFIER LETTER KATAKANA NASALIZED TONE FOUR;Lm;0;L;;;;;N;;;;;
-1BA0C;MODIFIER LETTER KATAKANA NASALIZED TONE FIVE;Lm;0;L;;;;;N;;;;;
-1BA0E;MODIFIER LETTER KATAKANA NASALIZED TONE SEVEN;Lm;0;L;;;;;N;;;;;
-1BA0F;MODIFIER LETTER KATAKANA NASALIZED TONE EIGHT;Lm;0;L;;;;;N;;;;;
+1BA01;MODIFIER LETTER KATAKANA HOKKIEN TONE TWO;Lm;0;L;;;;;N;;;;;
+1BA02;MODIFIER LETTER KATAKANA HOKKIEN TONE THREE;Lm;0;L;;;;;N;;;;;
+1BA03;MODIFIER LETTER KATAKANA HOKKIEN TONE FOUR;Lm;0;L;;;;;N;;;;;
+1BA04;MODIFIER LETTER KATAKANA HOKKIEN TONE FIVE;Lm;0;L;;;;;N;;;;;
+1BA06;MODIFIER LETTER KATAKANA HOKKIEN TONE SEVEN;Lm;0;L;;;;;N;;;;;
+1BA07;MODIFIER LETTER KATAKANA HOKKIEN TONE EIGHT;Lm;0;L;;;;;N;;;;;
+1BA08;MODIFIER LETTER KATAKANA HOKKIEN NASALIZED TONE ONE;Lm;0;L;;;;;N;;;;;
+1BA09;MODIFIER LETTER KATAKANA HOKKIEN NASALIZED TONE TWO;Lm;0;L;;;;;N;;;;;
+1BA0A;MODIFIER LETTER KATAKANA HOKKIEN NASALIZED TONE THREE;Lm;0;L;;;;;N;;;;;
+1BA0B;MODIFIER LETTER KATAKANA HOKKIEN NASALIZED TONE FOUR;Lm;0;L;;;;;N;;;;;
+1BA0C;MODIFIER LETTER KATAKANA HOKKIEN NASALIZED TONE FIVE;Lm;0;L;;;;;N;;;;;
+1BA0E;MODIFIER LETTER KATAKANA HOKKIEN NASALIZED TONE SEVEN;Lm;0;L;;;;;N;;;;;
+1BA0F;MODIFIER LETTER KATAKANA HOKKIEN NASALIZED TONE EIGHT;Lm;0;L;;;;;N;;;;;
 \end{verbatim}
 
 \section{On tone six}
@@ -364,6 +364,12 @@ No special actions need be taken, nor JavaScript be used, the HTML for the last 
 \begin{verbatim}
 <p class=vert><ruby>\cjk{臺}<rt>\tkana{タイ𛨄}</rt>\cjk{語}<rt>\tkana{ギイ𛨁}</rt></ruby></p>
 \end{verbatim}
+
+\section{On naming}
+
+Finally, I will explain my reasoning for why I am requesting the glyph names I am requesting. I have very deliberately chosen not to include a reference to Taiwan in either the names of the characters or the name of the requested block. In China, even the word Taiwan is politically sensitive, as is the period of Japanese rule. Further, Taiwanese kana write the Hokkien language, which is also spoken in mainland China. Indeed, the Quanzhou dialect, historically named the ``Chinchew dialect'', gets its name from the city of Quanzhou (\cjk{泉州市}). Second of all, the Taiwanese kana were used occasionally in imperial Japan in the linguistic study of other Chinese languages, though the vast majority of surviving sources and modern use is in/for Hokkien.
+
+The UTC should be aware of this issue when deciding on naming.
 
 \chapter{Evidence of all requested characters}
 \section{Tone letters}

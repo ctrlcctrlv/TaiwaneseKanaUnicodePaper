@@ -59,7 +59,7 @@ SILE.registerCommand("rubyb", function (options, content)
     local oy = typesetter.frame.state.cursorY
     typesetter.frame:advanceWritingDirection(rubybbox.width)
     typesetter.frame:advancePageDirection(-SILE.settings.get("rubyb.height"))
-    SILE.outputter.moveTo(typesetter.frame.state.cursorX, typesetter.frame.state.cursorY)
+    SILE.outputter.setCursor(typesetter.frame.state.cursorX, typesetter.frame.state.cursorY)
     for i = 1, #(self.value) do
       local node = self.value[i]
       node:outputYourself(typesetter, line)
