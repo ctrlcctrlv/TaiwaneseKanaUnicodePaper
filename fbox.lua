@@ -35,8 +35,7 @@ local fbox = function(options, content)
     multiEval("\\frame[id=twilightzone]")
   end
   SU.warn = warnbefore
-  -- print(x);print(y)
-  multiEval(string.format("%s[next=twilightzone,top=%d,left=%d,id=fbox%d,height=height(page)%s]", framefunc, y, x, fboxid,options.width and (',width='..options.width) or ",width=2zw"))
+  multiEval(string.format("%s[next=twilightzone,top=%f,left=%f,id=fbox%d,height=height(page)%s]", framefunc, y, x, fboxid,options.width and (',width='..options.width) or ",width=2zw"))
   multiEval("\\end{pagetemplate}\n")
   -- print(table.concat(evalstatements,"\n")) -- for debugging
   eval()

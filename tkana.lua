@@ -4,7 +4,7 @@ SILE.baseClass:loadPackage("raiselower")
 SILE.registerCommand("tkanav", function(options, content)
     SILE.settings.temporarily(function()
 
-    SILE.call("font", {size= "0.5em", filename= "./FRBTaiwaneseKana.otf", features="+ruby"})
+    SILE.call("font", {size= "0.42em", filename= "./FRBTaiwaneseKana.otf", features="+ruby"})
     local i = 0
     local tkana = {}
     SU.dump(content)

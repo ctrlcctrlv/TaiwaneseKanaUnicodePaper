@@ -2,9 +2,9 @@ return {
   {
     label = {
       "Quick summary",
-      file = "/opt/share/sile/classes/book.lua",
+      file = "/usr/share/sile/classes/book.lua",
       id = "stuff",
-      lno = 100
+      lno = 96
     },
     level = 1,
     pageno = "5"
@@ -12,9 +12,9 @@ return {
   {
     label = {
       "Tone marks",
-      file = "/opt/share/sile/classes/book.lua",
+      file = "/usr/share/sile/classes/book.lua",
       id = "stuff",
-      lno = 100
+      lno = 96
     },
     level = 2,
     pageno = "5"
@@ -22,9 +22,9 @@ return {
   {
     label = {
       "Nasalized tone marks",
-      file = "/opt/share/sile/classes/book.lua",
+      file = "/usr/share/sile/classes/book.lua",
       id = "stuff",
-      lno = 100
+      lno = 96
     },
     level = 2,
     pageno = "6"
@@ -32,9 +32,9 @@ return {
   {
     label = {
       "Combining characters",
-      file = "/opt/share/sile/classes/book.lua",
+      file = "/usr/share/sile/classes/book.lua",
       id = "stuff",
-      lno = 100
+      lno = 96
     },
     level = 2,
     pageno = "7"
@@ -42,9 +42,9 @@ return {
   {
     label = {
       "Overview",
-      file = "/opt/share/sile/classes/book.lua",
+      file = "/usr/share/sile/classes/book.lua",
       id = "stuff",
-      lno = 100
+      lno = 96
     },
     level = 1,
     pageno = "8"
@@ -52,9 +52,9 @@ return {
   {
     label = {
       "Linguistic",
-      file = "/opt/share/sile/classes/book.lua",
+      file = "/usr/share/sile/classes/book.lua",
       id = "stuff",
-      lno = 100
+      lno = 96
     },
     level = 2,
     pageno = "8"
@@ -62,9 +62,9 @@ return {
   {
     label = {
       "Historic (Taiwanese...kana?)",
-      file = "/opt/share/sile/classes/book.lua",
+      file = "/usr/share/sile/classes/book.lua",
       id = "stuff",
-      lno = 100
+      lno = 96
     },
     level = 2,
     pageno = "8"
@@ -72,9 +72,9 @@ return {
   {
     label = {
       "Legacy encodings",
-      file = "/opt/share/sile/classes/book.lua",
+      file = "/usr/share/sile/classes/book.lua",
       id = "stuff",
-      lno = 100
+      lno = 96
     },
     level = 2,
     pageno = "11"
@@ -82,9 +82,9 @@ return {
   {
     label = {
       "Pseudo-Unicode encodings",
-      file = "/opt/share/sile/classes/book.lua",
+      file = "/usr/share/sile/classes/book.lua",
       id = "stuff",
-      lno = 100
+      lno = 96
     },
     level = 3,
     pageno = "11"
@@ -92,9 +92,9 @@ return {
   {
     label = {
       "Mojikyō",
-      file = "/opt/share/sile/classes/book.lua",
+      file = "/usr/share/sile/classes/book.lua",
       id = "stuff",
-      lno = 100
+      lno = 96
     },
     level = 3,
     pageno = "11"
@@ -102,9 +102,9 @@ return {
   {
     label = {
       "Unicode considerations",
-      file = "/opt/share/sile/classes/book.lua",
+      file = "/usr/share/sile/classes/book.lua",
       id = "stuff",
-      lno = 100
+      lno = 96
     },
     level = 1,
     pageno = "13"
@@ -112,9 +112,9 @@ return {
   {
     label = {
       "UnicodeData.txt",
-      file = "/opt/share/sile/classes/book.lua",
+      file = "/usr/share/sile/classes/book.lua",
       id = "stuff",
-      lno = 100
+      lno = 96
     },
     level = 2,
     pageno = "13"
@@ -122,9 +122,9 @@ return {
   {
     label = {
       "On tone six",
-      file = "/opt/share/sile/classes/book.lua",
+      file = "/usr/share/sile/classes/book.lua",
       id = "stuff",
-      lno = 100
+      lno = 96
     },
     level = 2,
     pageno = "13"
@@ -132,9 +132,9 @@ return {
   {
     label = {
       "On the aspiration mark",
-      file = "/opt/share/sile/classes/book.lua",
+      file = "/usr/share/sile/classes/book.lua",
       id = "stuff",
-      lno = 100
+      lno = 96
     },
     level = 2,
     pageno = "14"
@@ -142,9 +142,9 @@ return {
   {
     label = {
       "On glyph order",
-      file = "/opt/share/sile/classes/book.lua",
+      file = "/usr/share/sile/classes/book.lua",
       id = "stuff",
-      lno = 100
+      lno = 96
     },
     level = 2,
     pageno = "14"
@@ -152,9 +152,9 @@ return {
   {
     label = {
       "Tone letters",
-      file = "/opt/share/sile/classes/book.lua",
+      file = "/usr/share/sile/classes/book.lua",
       id = "stuff",
-      lno = 100
+      lno = 96
     },
     level = 3,
     pageno = "14"
@@ -162,9 +162,9 @@ return {
   {
     label = {
       "Combining characters",
-      file = "/opt/share/sile/classes/book.lua",
+      file = "/usr/share/sile/classes/book.lua",
       id = "stuff",
-      lno = 100
+      lno = 96
     },
     level = 3,
     pageno = "14"
@@ -172,9 +172,9 @@ return {
   {
     label = {
       "Vertical typesetting",
-      file = "/opt/share/sile/classes/book.lua",
+      file = "/usr/share/sile/classes/book.lua",
       id = "stuff",
-      lno = 100
+      lno = 96
     },
     level = 2,
     pageno = "15"
@@ -182,61 +182,71 @@ return {
   {
     label = {
       "On naming",
-      file = "/opt/share/sile/classes/book.lua",
+      file = "/usr/share/sile/classes/book.lua",
       id = "stuff",
-      lno = 100
+      lno = 96
     },
     level = 2,
     pageno = "16"
   },
   {
     label = {
-      "Evidence of all requested characters",
-      file = "/opt/share/sile/classes/book.lua",
+      "On shakuhachi notation",
+      file = "/usr/share/sile/classes/book.lua",
       id = "stuff",
-      lno = 100
+      lno = 96
+    },
+    level = 2,
+    pageno = "17"
+  },
+  {
+    label = {
+      "Evidence of all requested characters",
+      file = "/usr/share/sile/classes/book.lua",
+      id = "stuff",
+      lno = 96
     },
     level = 1,
-    pageno = "17"
+    pageno = "18"
   },
   {
     label = {
       "Tone letters",
-      file = "/opt/share/sile/classes/book.lua",
+      file = "/usr/share/sile/classes/book.lua",
       id = "stuff",
-      lno = 100
+      lno = 96
     },
     level = 2,
-    pageno = "17"
+    pageno = "18"
   },
   {
     label = {
       "Combining characters",
-      file = "/opt/share/sile/classes/book.lua",
+      file = "/usr/share/sile/classes/book.lua",
       id = "stuff",
-      lno = 100
+      lno = 96
     },
     level = 2,
-    pageno = "17"
+    pageno = "18"
   },
   {
     label = {
       "Miscellaneous pages",
-      file = "/opt/share/sile/classes/book.lua",
+      file = "/usr/share/sile/classes/book.lua",
       id = "stuff",
-      lno = 100
+      lno = 96
     },
     level = 2,
-    pageno = "19"
+    pageno = "20"
   },
   {
     label = {
       "Bibliography",
-      file = "/opt/share/sile/classes/book.lua",
+      file = "/usr/share/sile/classes/book.lua",
       id = "stuff",
-      lno = 100
+      lno = 96
     },
     level = 1,
-    pageno = "23"
+    pageno = "24"
   }
 }

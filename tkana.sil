@@ -83,10 +83,13 @@ end)
 \font[family=EB Garamond,size=14pt,weight=400]
 \bigskip
 \bigskip
-\center{23 September 2020}
+\center{\font[features=+smcp]{last revised on}\newline{}27 October 2020}
+\bigskip
+\noindent \em{Changes since 23 September 2020:} Accepted all changes requested by Eiso Chan in L2/20-233.
 \bigskip
 \bigskip
 
+\rubyB:set[height=1em]
 \noindent\cjk{\fbox[width=4zw,framefunc=\tate-frame,_="
 \noindent\rubyB[reading=ふるや]{古家}\rubyB[reading=ときお]{時雄}を追悼して
 \bigskip\bigskip
@@ -150,7 +153,7 @@ For their help with \SILE, an experimental typesetting engine and alternative to
 \chapter{Quick summary}
 I propose a new block, in the Supplementary Multilingual Plane, to be called Katakana Phonetic Extensions Extended-A. I propose that the new block be given range U+1BA00 -- U+1BA0F, and is to include:
 \section{Tone marks}
-\noindent \tkanaisol{\unichar{0x1ba01}} \font[features=+smcp]{Modifier Letter Katakana Hokkien Tone Two}\\
+\noindent \tkanaisol{\unichar{0x1ba01}} \font[features=+smcp]{Modifier Letter Katakana Min Nan Tone Two}\\
 \noindent Mojiky\={o} 69622; tentative encoding U+1BA01\\
 "]
 \begin{listarea}
@@ -158,26 +161,26 @@ I propose a new block, in the Supplementary Multilingual Plane, to be called Kat
 \end{listarea}
 \texmode[_="%]
 \\
-\noindent \tkanaisol{\unichar{0x1ba02}} \font[features=+smcp]{Modifier Letter Katakana Hokkien Tone Three}\\
+\noindent \tkanaisol{\unichar{0x1ba02}} \font[features=+smcp]{Modifier Letter Katakana Min Nan Tone Three}\\
 \noindent Mojiky\={o} 69623; tentative encoding U+1BA02
 \\\\
-\noindent \tkanaisol{\unichar{0x1ba03}} \font[features=+smcp]{Modifier Letter Katakana Hokkien Tone Four}\\
+\noindent \tkanaisol{\unichar{0x1ba03}} \font[features=+smcp]{Modifier Letter Katakana Min Nan Tone Four}\\
 \noindent Mojiky\={o} 69624; tentative encoding U+1BA03
 \\\\
-\noindent \tkanaisol{\unichar{0x1ba04}} \font[features=+smcp]{Modifier Letter Katakana Hokkien Tone Five}\\
+\noindent \tkanaisol{\unichar{0x1ba04}} \font[features=+smcp]{Modifier Letter Katakana Min Nan Tone Five}\\
 \noindent Mojiky\={o} 69625; tentative encoding U+1BA04
 \\\\
-\noindent \tkanaisol{\unichar{0x1ba06}} \font[features=+smcp]{Modifier Letter Katakana Hokkien Tone Seven}\\
+\noindent \tkanaisol{\unichar{0x1ba06}} \font[features=+smcp]{Modifier Letter Katakana Min Nan Tone Seven}\\
 \noindent Mojiky\={o} 69627; tentative encoding U+1BA06
 \\\\
-\noindent \tkanaisol{\unichar{0x1ba07}} \font[features=+smcp]{Modifier Letter Katakana Hokkien Tone Eight}\\
+\noindent \tkanaisol{\unichar{0x1ba07}} \font[features=+smcp]{Modifier Letter Katakana Min Nan Tone Eight}\\
 \noindent Mojiky\={o} 69628; tentative encoding U+1BA07
 \\\\\eject
 \section{Nasalized tone marks}
-\noindent \tkanaisol{\unichar{0x1ba08}} \font[features=+smcp]{Modifier Letter Katakana Hokkien Nasalized Tone One}\\
+\noindent \tkanaisol{\unichar{0x1ba08}} \font[features=+smcp]{Modifier Letter Katakana Min Nan Nasalized Tone One}\\
 \noindent Mojiky\={o} 69629; tentative encoding U+1BA08
 \\\\
-\noindent \tkanaisol{\unichar{0x1BA09}} \font[features=+smcp]{Modifier Letter Katakana Hokkien Nasalized Tone Two}\\
+\noindent \tkanaisol{\unichar{0x1BA09}} \font[features=+smcp]{Modifier Letter Katakana Min Nan Nasalized Tone Two}\\
 \noindent Mojiky\={o} 69630; tentative encoding U+1BA09\\
 "]
 \script{SILE.scratch.counters.footnote.value=1}
@@ -186,19 +189,19 @@ I propose a new block, in the Supplementary Multilingual Plane, to be called Kat
 \end{listarea}
 \texmode[_="%]
 \\
-\noindent \tkanaisol{\unichar{0x1BA0A}} \font[features=+smcp]{Modifier Letter Katakana Hokkien Nasalized Tone Three}\\
+\noindent \tkanaisol{\unichar{0x1BA0A}} \font[features=+smcp]{Modifier Letter Katakana Min Nan Nasalized Tone Three}\\
 \noindent Mojiky\={o} 69631; tentative encoding U+1BA0A
 \\\\
-\noindent \tkanaisol{\unichar{0x1BA0B}} \font[features=+smcp]{Modifier Letter Katakana Hokkien Nasalized Tone Four}\\
+\noindent \tkanaisol{\unichar{0x1BA0B}} \font[features=+smcp]{Modifier Letter Katakana Min Nan Nasalized Tone Four}\\
 \noindent Mojiky\={o} 69632; tentative encoding U+1BA0B
 \\\\
-\noindent \tkanaisol{\unichar{0x1BA0C}} \font[features=+smcp]{Modifier Letter Katakana Hokkien Nasalized Tone Five}\\
+\noindent \tkanaisol{\unichar{0x1BA0C}} \font[features=+smcp]{Modifier Letter Katakana Min Nan Nasalized Tone Five}\\
 \noindent Mojiky\={o} 69633; tentative encoding U+1BA0C
 \\\\
-\noindent \tkanaisol{\unichar{0x1BA0E}} \font[features=+smcp]{Modifier Letter Katakana Hokkien Nasalized Tone Seven}\\
+\noindent \tkanaisol{\unichar{0x1BA0E}} \font[features=+smcp]{Modifier Letter Katakana Min Nan Nasalized Tone Seven}\\
 \noindent Mojiky\={o} 69635; tentative encoding U+1BA0E
 \\\\
-\noindent \tkanaisol{\unichar{0x1BA0F}} \font[features=+smcp]{Modifier Letter Katakana Hokkien Nasalized Tone Eight}\\
+\noindent \tkanaisol{\unichar{0x1BA0F}} \font[features=+smcp]{Modifier Letter Katakana Min Nan Nasalized Tone Eight}\\
 \noindent Mojiky\={o} 69636; tentative encoding U+1BA0F
 \eject
 \section{Combining characters}
@@ -226,7 +229,7 @@ I propose a new block, in the Supplementary Multilingual Plane, to be called Kat
 
 \section{Linguistic}
 \texmode[_="%]
-Taiwanese Hokkien ( \cjk{臺\tkanav{タイ𛨄}語\tkanav{ギイ𛨁}} ) is a Sinitic Southern Min language spoken throughout the world; as of 2013, it was spoken by 48 million people.\footnote{Sun, Obed [\cjk{孫暐皓}] (2017). ``\Href[src=https://crossing.cw.com.tw/article/7720]{\cjk{台灣16年「母語教育」宣告失敗？\goodbreak我們需要「搶救台語」嗎？──\goodbreak我在新加坡的四個觀察}}''. Crossing [\cjk{換日線}]. Tiānxià Magazine [\cjk{天下雜誌}]. Quote: ``\cjk{全球的閩南語（包括潮汕話、海南話等）使用者有超過 4,800 萬人}''.} It is spoken as far afield as the Philippines, where it is known as \em{Fookien}.
+Taiwanese Hokkien ( \cjk{臺\tkanav{タイ𛨄}語\tkanav{ギイ𛨁}} ) is a Sinitic Southern Min language spoken throughout the world; as of 2013, it was spoken by 48 million people.\footnote{Sun, Obed [\cjk{孫暐皓}] (2017). ``\Href[src=https://crossing.cw.com.tw/article/7720]{\cjk{台灣16年「母語教育」宣告失敗？\goodbreak我們需要「搶救台語」嗎？──\goodbreak我在新加坡的四個觀察}}''. Crossing [\cjk{換日線}]. Tiānxià Magazine [\cjk{天下雜誌}]. Quote: ``\cjk{全球的閩南語（包括潮汕話、海南話等）使用者有超過 4,800 萬人}''.} It is spoken as far afield as the Philippines, where it is known as \em{Fookien}. In ISO 639--3, it is known as Min Nan.
 
 In Taiwan, Hokkien is a widely spoken language, and is even used in academic writing. The most popular way of writing Hokkien is known as \em{Hàn-lô} (\cjk{漢\tkanav{ハヌ𛨂}羅\tkanav{ロヲ𛨄}}), which to untrained eyes may appear to be \em{mojibake}…\\
 \\
@@ -271,7 +274,7 @@ A second pseudo-Unicode encoding exists, which I call the ``\Href[src=https://tw
 
 Mojiky\={o} almost fully supports Taiwanese kana. Its only deficiency is that it is missing \tkana{オ̅} and \tkana{ゥ̅}, which means that the Quanzhou dialect is not reproducible in the Mojiky\={o} encoding.
 
-In Mojiky\={o}, the Taiwanese kana are available in the font \code{\hbox{Mojikm0D.TTF}}; 20 codepoints are devoted to them. Mojiky\={o} chooses to encode the \font[features=+smcp]{Combining Katakana Overline} as precombined with the kana it combines with, and it encodes the \font[features=+smcp]{Combining Katakana Dot Below} as a spacing mark.
+In Mojiky\={o}, the Taiwanese kana are available in the font \code{\hbox{Mojikm0D.TTF}}; 20 codepoints are devoted to them. Mojiky\={o} chooses to encode the \font[features=+smcp]{Combining Overline} as precombined with the kana it combines with, and it encodes the \font[features=+smcp]{Combining Dot Below} as a spacing mark.
 
 \center{\img[src=mojikyo.png]}
 
@@ -285,19 +288,19 @@ Below are the Taiwanese kana glyphs as they appear in \code{\hbox{Mojikm0D.TTF}}
 \chapter{Unicode considerations}
 \section{UnicodeData.txt}
 \begin{verbatim}
-1BA01;MODIFIER LETTER KATAKANA HOKKIEN TONE TWO;Lm;0;L;;;;;N;;;;;
-1BA02;MODIFIER LETTER KATAKANA HOKKIEN TONE THREE;Lm;0;L;;;;;N;;;;;
-1BA03;MODIFIER LETTER KATAKANA HOKKIEN TONE FOUR;Lm;0;L;;;;;N;;;;;
-1BA04;MODIFIER LETTER KATAKANA HOKKIEN TONE FIVE;Lm;0;L;;;;;N;;;;;
-1BA06;MODIFIER LETTER KATAKANA HOKKIEN TONE SEVEN;Lm;0;L;;;;;N;;;;;
-1BA07;MODIFIER LETTER KATAKANA HOKKIEN TONE EIGHT;Lm;0;L;;;;;N;;;;;
-1BA08;MODIFIER LETTER KATAKANA HOKKIEN NASALIZED TONE ONE;Lm;0;L;;;;;N;;;;;
-1BA09;MODIFIER LETTER KATAKANA HOKKIEN NASALIZED TONE TWO;Lm;0;L;;;;;N;;;;;
-1BA0A;MODIFIER LETTER KATAKANA HOKKIEN NASALIZED TONE THREE;Lm;0;L;;;;;N;;;;;
-1BA0B;MODIFIER LETTER KATAKANA HOKKIEN NASALIZED TONE FOUR;Lm;0;L;;;;;N;;;;;
-1BA0C;MODIFIER LETTER KATAKANA HOKKIEN NASALIZED TONE FIVE;Lm;0;L;;;;;N;;;;;
-1BA0E;MODIFIER LETTER KATAKANA HOKKIEN NASALIZED TONE SEVEN;Lm;0;L;;;;;N;;;;;
-1BA0F;MODIFIER LETTER KATAKANA HOKKIEN NASALIZED TONE EIGHT;Lm;0;L;;;;;N;;;;;
+1BA01;MODIFIER LETTER KATAKANA MIN NAN TONE TWO;Lm;0;L;;;;;N;;;;;
+1BA02;MODIFIER LETTER KATAKANA MIN NAN TONE THREE;Lm;0;L;;;;;N;;;;;
+1BA03;MODIFIER LETTER KATAKANA MIN NAN TONE FOUR;Lm;0;L;;;;;N;;;;;
+1BA04;MODIFIER LETTER KATAKANA MIN NAN TONE FIVE;Lm;0;L;;;;;N;;;;;
+1BA06;MODIFIER LETTER KATAKANA MIN NAN TONE SEVEN;Lm;0;L;;;;;N;;;;;
+1BA07;MODIFIER LETTER KATAKANA MIN NAN TONE EIGHT;Lm;0;L;;;;;N;;;;;
+1BA08;MODIFIER LETTER KATAKANA MIN NAN NASALIZED TONE ONE;Lm;0;L;;;;;N;;;;;
+1BA09;MODIFIER LETTER KATAKANA MIN NAN NASALIZED TONE TWO;Lm;0;L;;;;;N;;;;;
+1BA0A;MODIFIER LETTER KATAKANA MIN NAN NASALIZED TONE THREE;Lm;0;L;;;;;N;;;;;
+1BA0B;MODIFIER LETTER KATAKANA MIN NAN NASALIZED TONE FOUR;Lm;0;L;;;;;N;;;;;
+1BA0C;MODIFIER LETTER KATAKANA MIN NAN NASALIZED TONE FIVE;Lm;0;L;;;;;N;;;;;
+1BA0E;MODIFIER LETTER KATAKANA MIN NAN NASALIZED TONE SEVEN;Lm;0;L;;;;;N;;;;;
+1BA0F;MODIFIER LETTER KATAKANA MIN NAN NASALIZED TONE EIGHT;Lm;0;L;;;;;N;;;;;
 \end{verbatim}
 
 \section{On tone six}
@@ -369,7 +372,17 @@ No special actions need be taken, nor JavaScript be used, the HTML for the last 
 
 Finally, I will explain my reasoning for why I am requesting the glyph names I am requesting. I have very deliberately chosen not to include a reference to Taiwan in either the names of the characters or the name of the requested block. In China, even the word Taiwan is politically sensitive, as is the period of Japanese rule. Further, Taiwanese kana write the Hokkien language, which is also spoken in mainland China. Indeed, the Quanzhou dialect, historically named the ``Chinchew dialect'', gets its name from the city of Quanzhou (\cjk{泉州市}). Second of all, the Taiwanese kana were used occasionally in imperial Japan in the linguistic study of other Chinese languages, though the vast majority of surviving sources and modern use is in/for Hokkien.
 
-The UTC should be aware of this issue when deciding on naming.
+The UTC should be aware of this issue when deciding on naming. My proposal originally asked the UTC to name the characters \em{Hokkien}. Eiso Chan, however, thought that \em{Min Nan} would be better, as this is the name used by ISO 639--3, and submitted the comment document L2/20-233. I strongly agree, and have revised the character names in my proposal accordingly.
+
+\section{On shakuhachi notation}
+
+The \em{shakuhachi} (\cjk{\rubyA[reading=しゃく]{尺}\rubyA[reading=はち]{八}}) is a traditional Japanese instrument, which looks similar to a flute. It has a traditional notation scheme known as \em{shakuhachi gakufu} (\cjk{尺八\rubyA[reading=がく]{楽}\rubyA[reading=ふ]{譜}}).
+
+As seen below,\footnote{Via Tenzan Yamada (\cjk{山田典山}): \Href[src=https://ameblo.jp/yamadatenzan/entry-12401910405.html]{\cjk{情熱大陸の尺八譜}}.} in \em{shakuhachi}, the combining characters mentioned in this proposal do not combine the same way in vertical writing. They combine on the right, as is more common in CJK contexts.
+
+\center{\img[src=shakuhachi.png,height=25%ph]}
+
+I agree with Eiso Chan's recommendations in L2/20-233. I am hopeless when it comes to musical subjects, so a more complete \em{shakuhachi} proposal will not be forthcoming from me, and it is out of the scope of this proposal. However, I immediately understand the wisdom of a registered OpenType feature such as \code{skhc}. As far as Unicode is concerned, Chan's recommended changes to \code{NameList.txt} and UAX#50 are in my opinion sound.
 
 \chapter{Evidence of all requested characters}
 \section{Tone letters}
@@ -406,7 +419,7 @@ Hirasawa (1914), p. 147.
 
 \bigskip
 
-\noindent{}The above book is another corroborating source for the equality of tone two (\cjk{下声}) and tone six (\cjk{下声}) in Hokkien, as well.
+\noindent{}The above book is another corroborating source for the equality of tone two (\cjk{上声}) and tone six (\cjk{上声}) in Hokkien, as well.
 "]
 
 \eject
@@ -415,7 +428,7 @@ Hirasawa (1914), p. 147.
 \bigskip
 \bigskip
 
-\cjk{先生が本を読んでいます。生徒を、静かに、聞いています。}\newline
+\cjk{先生が本を読んでいます。生徒を、静かに、聞いています。}\newline\newline
 \cjk{先}\tkanav{シェヌ}\cjk{生}\tkanav{シイ𛨈}\cjk{講}\tkanav{コン𛨁}\cjk{，學}\tkanav{ハㇰ𛨇}\cjk{生}\tkanav{シェン}\cjk{恬}\tkanav{チァム𛨆}\cjk{恬}\tkanav{チ̅ァム𛨆}\cjk{聽}\tkanav{チ̣̅ア𛨈}\cjk{。}
 
 \chapter{Bibliography}

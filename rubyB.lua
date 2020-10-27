@@ -1,4 +1,4 @@
-local defaultRubyFont = { size = "0.6zw", weight = 800 }
+local defaultRubyFont = { size = "0.6zw", weight = 600 }
 local rubyBFont = defaultRubyFont
 SILE.registerCommand("rubyB:font", function (options, _)
   if options then
