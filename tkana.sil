@@ -83,8 +83,9 @@ end)
 \font[family=EB Garamond,size=14pt,weight=400]
 \bigskip
 \bigskip
-\center{\font[features=+smcp]{last revised on}\newline{}27 October 2020}
+\center{\font[features=+smcp]{last revised on}\newline{}9 November 2020}
 \bigskip
+\noindent \em{Changes since 27 October 2020:} Accepted all changes requested by Script Ad Hoc.
 \noindent \em{Changes since 23 September 2020:} Accepted all changes requested by Eiso Chan in L2/20-233.
 \bigskip
 \bigskip
@@ -151,58 +152,60 @@ For their help with \SILE, an experimental typesetting engine and alternative to
 \eject\tableofcontents
 \define[command=book:chapter:post]{\par}
 \chapter{Quick summary}
-I propose a new block, in the Supplementary Multilingual Plane, to be called Katakana Phonetic Extensions Extended-A. I propose that the new block be given range U+1BA00 -- U+1BA0F, and is to include:
+\em{For copyable names, see \S Unicode considerations.}
+
+I propose a new block, in the Supplementary Multilingual Plane, to be called Kana Extended-B. I propose that the new block be given range U+1AFF0 -- U+1AFFF, and is to include:
 \section{Tone marks}
-\noindent \tkanaisol{\unichar{0x1ba01}} \font[features=+smcp]{Modifier Letter Katakana Min Nan Tone Two}\\
-\noindent Mojiky\={o} 69622; tentative encoding U+1BA01\\
+\noindent \tkanaisol{\unichar{0x1AFF0}} \font[features=+smcp]{Katakana Minnan Letter Tone-2}\\
+\noindent Mojiky\={o} 69622; tentative encoding U+1AFF0\\
 "]
 \begin{listarea}
-\glue[width=2em]\listitem{In Hokkien, also used for tone six\footnote{For more discussion of this issue, and why I'm proposing we leave U+1B306 and U+1B316 open, please see \unichar{0xA7} On tone six.}}
+\glue[width=2em]\listitem{In Minnan, also used for tone six\footnote{For more discussion of this issue, and why I'm proposing we leave U+1B306 and U+1B316 open, please see \unichar{0xA7} On tone six.}}
 \end{listarea}
 \texmode[_="%]
 \\
-\noindent \tkanaisol{\unichar{0x1ba02}} \font[features=+smcp]{Modifier Letter Katakana Min Nan Tone Three}\\
-\noindent Mojiky\={o} 69623; tentative encoding U+1BA02
+\noindent \tkanaisol{\unichar{0x1AFF1}} \font[features=+smcp]{Katakana Minnan Letter Tone-3}\\
+\noindent Mojiky\={o} 69623; tentative encoding U+1AFF1
 \\\\
-\noindent \tkanaisol{\unichar{0x1ba03}} \font[features=+smcp]{Modifier Letter Katakana Min Nan Tone Four}\\
-\noindent Mojiky\={o} 69624; tentative encoding U+1BA03
+\noindent \tkanaisol{\unichar{0x1AFF2}} \font[features=+smcp]{Katakana Minnan Letter Tone-4}\\
+\noindent Mojiky\={o} 69624; tentative encoding U+1AFF2
 \\\\
-\noindent \tkanaisol{\unichar{0x1ba04}} \font[features=+smcp]{Modifier Letter Katakana Min Nan Tone Five}\\
-\noindent Mojiky\={o} 69625; tentative encoding U+1BA04
+\noindent \tkanaisol{\unichar{0x1AFF3}} \font[features=+smcp]{Katakana Minnan Letter Tone-5}\\
+\noindent Mojiky\={o} 69625; tentative encoding U+1AFF3
 \\\\
-\noindent \tkanaisol{\unichar{0x1ba06}} \font[features=+smcp]{Modifier Letter Katakana Min Nan Tone Seven}\\
-\noindent Mojiky\={o} 69627; tentative encoding U+1BA06
+\noindent \tkanaisol{\unichar{0x1AFF5}} \font[features=+smcp]{Katakana Minnan Letter Tone-7}\\
+\noindent Mojiky\={o} 69627; tentative encoding U+1AFF5
 \\\\
-\noindent \tkanaisol{\unichar{0x1ba07}} \font[features=+smcp]{Modifier Letter Katakana Min Nan Tone Eight}\\
-\noindent Mojiky\={o} 69628; tentative encoding U+1BA07
+\noindent \tkanaisol{\unichar{0x1AFF6}} \font[features=+smcp]{Katakana Minnan Letter Tone-8}\\
+\noindent Mojiky\={o} 69628; tentative encoding U+1AFF6
 \\\\\eject
 \section{Nasalized tone marks}
-\noindent \tkanaisol{\unichar{0x1ba08}} \font[features=+smcp]{Modifier Letter Katakana Min Nan Nasalized Tone One}\\
-\noindent Mojiky\={o} 69629; tentative encoding U+1BA08
+\noindent \tkanaisol{\unichar{0x1AFF7}} \font[features=+smcp]{Katakana Minnan Letter Nasalized Tone-1}\\
+\noindent Mojiky\={o} 69629; tentative encoding U+1AFF7
 \\\\
-\noindent \tkanaisol{\unichar{0x1BA09}} \font[features=+smcp]{Modifier Letter Katakana Min Nan Nasalized Tone Two}\\
-\noindent Mojiky\={o} 69630; tentative encoding U+1BA09\\
+\noindent \tkanaisol{\unichar{0x1AFF8}} \font[features=+smcp]{Katakana Minnan Letter Nasalized Tone-2}\\
+\noindent Mojiky\={o} 69630; tentative encoding U+1AFF8\\
 "]
 \script{SILE.scratch.counters.footnote.value=1}
 \begin{listarea}
-\glue[width=2em]\listitem{In Hokkien, also used for tone six\footnote{For more discussion of this issue, and why I'm proposing we leave U+1B306 and U+1B316 open, please see \unichar{0xA7} On tone six.}}
+\glue[width=2em]\listitem{In Minnan, also used for tone six\footnote{For more discussion of this issue, and why I'm proposing we leave U+1B306 and U+1B316 open, please see \unichar{0xA7} On tone six.}}
 \end{listarea}
 \texmode[_="%]
 \\
-\noindent \tkanaisol{\unichar{0x1BA0A}} \font[features=+smcp]{Modifier Letter Katakana Min Nan Nasalized Tone Three}\\
-\noindent Mojiky\={o} 69631; tentative encoding U+1BA0A
+\noindent \tkanaisol{\unichar{0x1AFF9}} \font[features=+smcp]{Katakana Minnan Letter Nasalized Tone-3}\\
+\noindent Mojiky\={o} 69631; tentative encoding U+1AFF9
 \\\\
-\noindent \tkanaisol{\unichar{0x1BA0B}} \font[features=+smcp]{Modifier Letter Katakana Min Nan Nasalized Tone Four}\\
-\noindent Mojiky\={o} 69632; tentative encoding U+1BA0B
+\noindent \tkanaisol{\unichar{0x1AFFA}} \font[features=+smcp]{Katakana Minnan Letter Nasalized Tone-4}\\
+\noindent Mojiky\={o} 69632; tentative encoding U+1AFFA
 \\\\
-\noindent \tkanaisol{\unichar{0x1BA0C}} \font[features=+smcp]{Modifier Letter Katakana Min Nan Nasalized Tone Five}\\
-\noindent Mojiky\={o} 69633; tentative encoding U+1BA0C
+\noindent \tkanaisol{\unichar{0x1AFFB}} \font[features=+smcp]{Katakana Minnan Letter Nasalized Tone-5}\\
+\noindent Mojiky\={o} 69633; tentative encoding U+1AFFB
 \\\\
-\noindent \tkanaisol{\unichar{0x1BA0E}} \font[features=+smcp]{Modifier Letter Katakana Min Nan Nasalized Tone Seven}\\
-\noindent Mojiky\={o} 69635; tentative encoding U+1BA0E
+\noindent \tkanaisol{\unichar{0x1AFFD}} \font[features=+smcp]{Katakana Minnan Letter Nasalized Tone-7}\\
+\noindent Mojiky\={o} 69635; tentative encoding U+1AFFD
 \\\\
-\noindent \tkanaisol{\unichar{0x1BA0F}} \font[features=+smcp]{Modifier Letter Katakana Min Nan Nasalized Tone Eight}\\
-\noindent Mojiky\={o} 69636; tentative encoding U+1BA0F
+\noindent \tkanaisol{\unichar{0x1AFFE}} \font[features=+smcp]{Katakana Minnan Letter Nasalized Tone-8}\\
+\noindent Mojiky\={o} 69636; tentative encoding U+1AFFE
 \eject
 \section{Combining characters}
 \noindent\em{Note: The two below are provided for informational purposes and would be unified with existing characters. Notes are about Taiwanese kana.}
@@ -263,7 +266,7 @@ In our time, besides being used as a substantial basis for the \em{Dictionary of
 A ``pseudo-Unicode'' encoding is currently in use on Wikipedia and elsewhere. This ``encoding'', to the extent that it is one, mixes SVG glyphs, HTML markup, and a few Unicode characters intended for other purposes.
 
 \begin{listarea}
-\listitem{U+1BA01--1BA0F are represented with SVG's;}
+\listitem{U+1AFF0--1AFFE are represented with SVG's;}
 \listitem{U+0323, the \font[features=+smcp]{Combining Dot Below}, is used as in this document; and}
 \listitem{U+0305, the \font[features=+smcp]{Combining Overline}, is represented variably by a CSS \code{\hbox{border-top}}, or else by a \font[features=+smcp]{Combining Macron} (U+0304) or other script-inappropriate combining mark. It seems this is done due to lack of font support for combining marks over katakana.}
 \end{listarea}
@@ -288,19 +291,19 @@ Below are the Taiwanese kana glyphs as they appear in \code{\hbox{Mojikm0D.TTF}}
 \chapter{Unicode considerations}
 \section{UnicodeData.txt}
 \begin{verbatim}
-1BA01;MODIFIER LETTER KATAKANA MIN NAN TONE TWO;Lm;0;L;;;;;N;;;;;
-1BA02;MODIFIER LETTER KATAKANA MIN NAN TONE THREE;Lm;0;L;;;;;N;;;;;
-1BA03;MODIFIER LETTER KATAKANA MIN NAN TONE FOUR;Lm;0;L;;;;;N;;;;;
-1BA04;MODIFIER LETTER KATAKANA MIN NAN TONE FIVE;Lm;0;L;;;;;N;;;;;
-1BA06;MODIFIER LETTER KATAKANA MIN NAN TONE SEVEN;Lm;0;L;;;;;N;;;;;
-1BA07;MODIFIER LETTER KATAKANA MIN NAN TONE EIGHT;Lm;0;L;;;;;N;;;;;
-1BA08;MODIFIER LETTER KATAKANA MIN NAN NASALIZED TONE ONE;Lm;0;L;;;;;N;;;;;
-1BA09;MODIFIER LETTER KATAKANA MIN NAN NASALIZED TONE TWO;Lm;0;L;;;;;N;;;;;
-1BA0A;MODIFIER LETTER KATAKANA MIN NAN NASALIZED TONE THREE;Lm;0;L;;;;;N;;;;;
-1BA0B;MODIFIER LETTER KATAKANA MIN NAN NASALIZED TONE FOUR;Lm;0;L;;;;;N;;;;;
-1BA0C;MODIFIER LETTER KATAKANA MIN NAN NASALIZED TONE FIVE;Lm;0;L;;;;;N;;;;;
-1BA0E;MODIFIER LETTER KATAKANA MIN NAN NASALIZED TONE SEVEN;Lm;0;L;;;;;N;;;;;
-1BA0F;MODIFIER LETTER KATAKANA MIN NAN NASALIZED TONE EIGHT;Lm;0;L;;;;;N;;;;;
+1AFF0;KATAKANA MINNAN LETTER TONE-2;Lm;0;L;;;;;N;;;;;
+1AFF1;KATAKANA MINNAN LETTER TONE-3;Lm;0;L;;;;;N;;;;;
+1AFF2;KATAKANA MINNAN LETTER TONE-4;Lm;0;L;;;;;N;;;;;
+1AFF3;KATAKANA MINNAN LETTER TONE-5;Lm;0;L;;;;;N;;;;;
+1AFF5;KATAKANA MINNAN LETTER TONE-7;Lm;0;L;;;;;N;;;;;
+1AFF6;KATAKANA MINNAN LETTER TONE-8;Lm;0;L;;;;;N;;;;;
+1AFF7;KATAKANA MINNAN LETTER NASALIZED TONE-1;Lm;0;L;;;;;N;;;;;
+1AFF8;KATAKANA MINNAN LETTER NASALIZED TONE-2;Lm;0;L;;;;;N;;;;;
+1AFF9;KATAKANA MINNAN LETTER NASALIZED TONE-3;Lm;0;L;;;;;N;;;;;
+1AFFA;KATAKANA MINNAN LETTER NASALIZED TONE-4;Lm;0;L;;;;;N;;;;;
+1AFFB;KATAKANA MINNAN LETTER NASALIZED TONE-5;Lm;0;L;;;;;N;;;;;
+1AFFD;KATAKANA MINNAN LETTER NASALIZED TONE-7;Lm;0;L;;;;;N;;;;;
+1AFFE;KATAKANA MINNAN LETTER NASALIZED TONE-8;Lm;0;L;;;;;N;;;;;
 \end{verbatim}
 
 \section{On tone six}
@@ -322,7 +325,7 @@ It makes the most sense to use the glyph order from Âng and Ogawa (1992). It is
 So:
 
 \subsection{Tone letters}
-\tkanaisol{\unichar{0x1BA01}} \raise[height=1ex]{<} \tkanaisol{\unichar{0x1BA09}} \raise[height=1ex]{<} \tkanaisol{\unichar{0x1BA02}} \raise[height=1ex]{<} \tkanaisol{\unichar{0x1BA0A}} \raise[height=1ex]{<} \tkanaisol{\unichar{0x1BA03}} \raise[height=1ex]{<} \tkanaisol{\unichar{0x1BA0B}} \raise[height=1ex]{<} \tkanaisol{\unichar{0x1BA04}} \raise[height=1ex]{<} \tkanaisol{\unichar{0x1BA0C}} \raise[height=1ex]{<} \tkanaisol{\unichar{0x1BA06}} \raise[height=1ex]{<} \tkanaisol{\unichar{0x1BA0E}} \raise[height=1ex]{<} \tkanaisol{\unichar{0x1BA07}} \raise[height=1ex]{<} \tkanaisol{\unichar{0x1BA0F}}
+\tkanaisol{\unichar{0x1AFF0}} \raise[height=1ex]{<} \tkanaisol{\unichar{0x1AFF8}} \raise[height=1ex]{<} \tkanaisol{\unichar{0x1AFF1}} \raise[height=1ex]{<} \tkanaisol{\unichar{0x1AFF9}} \raise[height=1ex]{<} \tkanaisol{\unichar{0x1AFF2}} \raise[height=1ex]{<} \tkanaisol{\unichar{0x1AFFA}} \raise[height=1ex]{<} \tkanaisol{\unichar{0x1AFF3}} \raise[height=1ex]{<} \tkanaisol{\unichar{0x1AFFB}} \raise[height=1ex]{<} \tkanaisol{\unichar{0x1AFF5}} \raise[height=1ex]{<} \tkanaisol{\unichar{0x1AFFD}} \raise[height=1ex]{<} \tkanaisol{\unichar{0x1AFF6}} \raise[height=1ex]{<} \tkanaisol{\unichar{0x1AFFE}}
 
 \subsection{Combining characters}
 \tkanaisol{タ} \raise[height=1ex]{<} \tkanaisol{タ\unichar{0x0323}}\raise[height=1ex]{\footnote{\^{A}ng and Ogawa (1992), vol. 2, p. 2.}}
@@ -331,16 +334,18 @@ So:
 
 \section{Vertical typesetting}
 
-Taiwanese kana are most often typeset vertically historically. All horizontally typeset examples I was able to find are from this century.
+Taiwanese kana are most often typeset vertically historically. All horizontally typeset examples I was able to find are from this century, e.g., on Wikipedia:
+
+\center{\img[src=Wikipedia.png,width=75%fw]}
 
 As far as Unicode is concerned, all we need is to put this in \code{VerticalOrientation.txt}:
 
 \begin{verbatim}
-1BA01..1BA0F    ; U  # Lc   [13] MODIFIER LETTER KATAKANA TONE TWO..MODIFIER LETTER KATAKANA NASALIZED TONE EIGHT
-\end{verbatim}
+1AFF0..1AFFE    ; U  # Lc   [13] KATAKANA MINNAN LETTER TONE-2..KATAKANA MINNAN LETTER NASALIZED TONE-8\end{verbatim}
 
 For this paper, I am using a \SILE package I wrote to do the vertical layout. Looking at the vertical layout, there are two ways to do it. In this paper, I consider it to be two lines, with the tone letter on the second line. It is also possible to do so in OpenType via contextual positioning, like this:
 
+\notex{
 \begin{verbatim}
 feature valt \{
     lookup valt2 \{
@@ -351,6 +356,7 @@ feature valt \{
     \} valt2;
 \} valt;
 \end{verbatim}
+}
 
 \bigskip
 
