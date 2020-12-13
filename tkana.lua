@@ -35,7 +35,7 @@ SILE.registerCommand("tkanav", function(options, content)
         SILE.call("rebox", {width = 0}, function() SILE.call("raise", {height = SILE.measurement("0.6ex")}, {utf8.char(tkana[idx])}) end)
         lower = SILE.measurement("1.0ex")
         content[1] = utf8.char(tkana[idx+1])
-    elseif (tkana[#tkana] <= 0x1BA00 or tkana[#tkana] >= 0x1BA0F) and nkana > 2 then
+    elseif (tkana[#tkana] <= 0x1AFF0-1 or tkana[#tkana] >= 0x1AFFF) and nkana > 2 then
         SILE.call("rebox", {width = 0}, function() SILE.call("raise", {height = SILE.measurement("0.6ex")}, {utf8.char(tkana[idx])}) end)
         lower = SILE.measurement("1.0ex")
         content[1] = utf8.char(tkana[#tkana])
@@ -44,7 +44,7 @@ SILE.registerCommand("tkanav", function(options, content)
     end
     SILE.call("rebox", {width = 0}, function() SILE.call("lower", {height = lower}, content) end)
     content[1] = utf8.char(tkana[#tkana])
-    if tkana[#tkana] >= 0x1BA00 and tkana[#tkana] <= 0x1BA0F then
+    if tkana[#tkana] >= 0x1AFF0-1 and tkana[#tkana] <= 0x1AFFF then
         SILE.call("font", {size= "1.2em"})
         local hbox = nil
         SILE.call("rebox", {width = 0}, function()
