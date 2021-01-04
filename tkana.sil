@@ -4,15 +4,7 @@
 \script[src=packages/color]
 \script[src=lists]
 \script{
--- From sile-project/sile documentation/macros.xml
-local simpletable = SILE.require('simpletable')
-simpletable.init(SILE.documentState.documentClass, {
-  tableTag = 'table',
-  trTag = 'tr',
-  tdTag = 'td'
-})
-}
-\script{
+SILE.require("packages/simpletable")
 SILE.registerCommand('Href', function(options, content)
     SILE.call("color", {color="#000099"}, function() SILE.call("href", options, content) end)
 end)
@@ -58,7 +50,7 @@ end)
 \define[command=cjkhyphen]{\begin[family=Noto Serif CJK JP,size=0.7zw]{font}\raise[height=0.3zw]{-}\end{font}\process}
 \define[command=cjk]{\font[size=0.95em,family=Noto Serif CJK JP]{\process}}
 \define[command=mathfourtd]{\td{\font[family=MathJax_Size4]{\process}}}
-\par\center{\font[size=24pt,weight=1000]A proposal to encode Taiwanese kana \font[family=Noto Serif CJK JP](\ruby[reading=TÂI]{臺}\nantwhyphen\ruby[reading=OÂN]{灣}\nantwhyphen\ruby[reading=GÍ]{語}\nantwspace\ruby[reading=KHÁ]{假}\nantwhyphen\ruby[reading=NAH]{名})\font[family=EB Garamond] in the UCS}
+\par\center{\font[size=24pt,weight=1000]Final proposal to encode Taiwanese kana \font[family=Noto Serif CJK JP](\ruby[reading=TÂI]{臺}\nantwhyphen\ruby[reading=OÂN]{灣}\nantwhyphen\ruby[reading=GÍ]{語}\nantwspace\ruby[reading=KHÁ]{假}\nantwhyphen\ruby[reading=NAH]{名})\font[family=EB Garamond] in the UCS}
 \remove-font-feature[Letters=SmallCaps]
 \center{\font[size=18pt,weight=400]Fredrick R. Brennan}
 \set[parameter=document.lineskip, value=0pt]
@@ -67,7 +59,7 @@ end)
 \begin{table}% ㇷ゚𛅦
 %BĒNG HOK LÊ
 \tr{\font[size=18pt,weight=400]\mathfourtd{\glue[width=3.9cm]⎛}\td{\glue[width=15%pw]\cjk{孟}\tkanav{ベン𚿵}}\mathfourtd{⎞}}
-\tr{\mathfourtd{\glue[width=3.9cm]\rebox[width=0pt]{⎜}\rebox[width=0pt]{\lower[height=5pt]{⎜}}\raise[height=5pt]{⎜}}\td{\font[size=18pt,weight=400]\raise[height=8.5pt]{\glue[width=15%pw]\cjk{福}\tkanav{ホク}}}\mathfourtd{\rebox[width=0pt]{\lower[height=5pt]{⎟}}\raise[height=5pt]{⎟} }}
+\tr{\mathfourtd{\glue[width=3.9cm]\rebox[width=0pt]{⎜}\rebox[width=0pt]{\lower[height=5pt]{⎜}}\raise[height=6.4pt]{⎜}}\td{\font[size=18pt,weight=400]\raise[height=8.5pt]{\glue[width=15%pw]\cjk{福}\tkanav{ホク}}}\mathfourtd{\rebox[width=0pt]{\lower[height=5pt]{⎟}}\raise[height=6.4pt]{⎟} }}
 \tr{\mathfourtd{\glue[width=3.9cm]\rebox[width=0pt]{⎜}\rebox[width=0pt]{\lower[height=5pt]{⎜}}\raise[height=5pt]{⎜}}\td{\font[size=18pt,weight=400]\raise[height=7pt]{\glue[width=15%pw]\cjk{黎}\tkanav{レエ𚿳}}}\mathfourtd{\rebox[width=0pt]{\lower[height=5pt]{⎟}}\raise[height=5pt]{⎟} }}
 \tr{\mathfourtd{\glue[width=3.9cm]\rebox[width=0pt]{⎜}\rebox[width=0pt]{\lower[height=5pt]{⎜}}\raise[height=5pt]{⎜}}\td{
 \raise[height=3pt]{
